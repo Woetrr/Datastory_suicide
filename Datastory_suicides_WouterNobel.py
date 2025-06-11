@@ -22,7 +22,7 @@ body {
 #------------------------------------------------------------------------------------------------------------------
 #sidebar creatian
 # Sidebar filters
-st.sidebar.image("C:/Users/woute/Documents/Minor/Data_story/Suicides/Pictures/Portret.jpg")
+st.sidebar.image("Pictures/Portret.jpg")
 
 # Add a text block with a background
 st.sidebar.markdown(
@@ -46,7 +46,7 @@ st.sidebar.markdown(
 col1, col2, col3 = st.columns([1, 3, 1])  # Adjust the middle column width as needed
 
 with col2:  # Everything inside col2 will be centered
-    st.image("C:/Users/woute/Documents/Minor/Data_story/Suicides/Pictures/header.png")
+    st.image("Pictures/header.png")
     st.markdown("## Suicide worldwide: Unveiling the Impact of Gender, Economy, and Society")
    
     st.write('''Suicide is a major public health concern that affects individuals, families, and entire communities.
@@ -65,7 +65,7 @@ with col2:  # Everything inside col2 will be centered
              This trend is visible across different age groups and both genders, suggesting a broader societal shift 
              rather than a temporary fluctuation. Though there are still some countries that show an increase.''')
                 
-    df = pd.read_csv("C:/Users/woute/Documents/Minor/Data_story/Suicides/Data/Suicide_rates.csv") #load the dataset
+    df = pd.read_csv("Data/Suicide_rates.csv") #load the dataset
     print(df.head(13))
     print(df.dtypes)
     
@@ -262,7 +262,7 @@ with col2:  # Everything inside col2 will be centered
     #------------------------------------------------------------------------------------------------------------------
     #comparing the GDP
     
-    st.image("C:/Users/woute/Documents/Minor/Data_story/Suicides/Pictures/geldzorgen.png") # picture about money isues
+    st.image("Pictures/geldzorgen.png") # picture about money isues
     
     st.markdown("### 3. Can Economic Growth Help Prevent Suicides?")
     
@@ -321,7 +321,7 @@ with col2:  # Everything inside col2 will be centered
     st.markdown("""___""") # make a stripe to seperate the graphs
     #------------------------------------------------------------------------------------------------------------------
     
-    df_1 = pd.read_excel("C:/Users/woute/Documents/Minor/Data_story/Suicides/Data/Zelfdodingen_1970-2023_NL.xlsx",sheet_name= "Tabel 1", skiprows=4,skipfooter=3)
+    df_1 = pd.read_excel("Data/Zelfdodingen_1970-2023_NL.xlsx",sheet_name= "Tabel 1", skiprows=4,skipfooter=3)
     # Rename columns (assuming structure from your example)
     df_1.columns = ["Year", 
               "Men_Absolute", "Women_Absolute", "Total_Absolute","",
@@ -368,7 +368,7 @@ with col2:  # Everything inside col2 will be centered
     
     st.markdown("""___""") # make a stripe to seperate the graphs
     #------------------------------------------------------------------------------------------------------------------
-    df_2 = pd.read_excel("C:/Users/woute/Documents/Minor/Data_story/Suicides/Data/Zelfdodingen_1970-2023_NL.xlsx",sheet_name= "Tabel 3", skiprows=8,skipfooter=7)
+    df_2 = pd.read_excel("Data/Zelfdodingen_1970-2023_NL.xlsx",sheet_name= "Tabel 3", skiprows=8,skipfooter=7)
     # Rename columns (assuming structure from your example)
     df_2.columns = ["provincie", 
               "2019", "2020","2021", "2022","2023",
@@ -379,7 +379,7 @@ with col2:  # Everything inside col2 will be centered
     print(df_2.dtypes)
     
     # Load GeoJSON file
-    with open("C:/Users/woute/Documents/Minor/Data_story/Suicides/Data/provinces_nederland.geojson", "r", encoding="utf-8") as f:
+    with open("Data/provinces_nederland.geojson", "r", encoding="utf-8") as f:
         provincies = json.load(f)
     
     st.markdown("### 5. Regional Suicide Trends in the Netherlands")
@@ -435,7 +435,7 @@ with col2:  # Everything inside col2 will be centered
     st.plotly_chart(map_nl, use_container_width=True)
     st.markdown("""___""") # make a stripe to seperate the graphs
     #------------------------------------------------------------------------------------------------------------------
-    st.image("C:/Users/woute/Documents/Minor/Data_story/Suicides/Pictures/psychological-support-concept-girl-feeling-anxiety-loneliness-helping-hand.jpg")
+    st.image("Pictures/psychological-support-concept-girl-feeling-anxiety-loneliness-helping-hand.jpg")
     st.markdown("### Conclusion")
     
     st.write("""Suicide remains a critical global issue, influenced by various factors such as gender, 
