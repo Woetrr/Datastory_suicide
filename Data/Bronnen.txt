@@ -1,0 +1,25 @@
+World Health Organization. (2024, August 29). Suicide. World Health Organization. https://www.who.int/news-room/fact-sheets/detail/suicide
+
+The gender paradox in suicidal behavior and its impact on the suicidal process
+https://www.sciencedirect.com/science/article/pii/S0165032711001492
+(Schrijvers et al., 2011)
+
+The impact of macroeconomic factors on suicide in 175 countries over 27 years
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9292781/
+(Meda et al., 2021)
+
+
+
+Data:
+zelfdoding wereld met GDP
+https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016
+
+zelfdoding nederland:
+https://www.cbs.nl/nl-nl/maatwerk/2024/18/zelfdodingen-1970-2023
+
+https://www.cbs.nl/nl-nl/nieuws/2024/18/1-862-zelfdodingen-in-2023
+
+https://www.cbs.nl/nl-nl/longread/statistische-trends/2021/zelfdoding-in-nederland-een-overzicht-vanaf-1950/2-resultaten
+
+The impact of macroeconomic factors on suicide in 175 countries over 27 years:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9292781/
