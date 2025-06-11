@@ -323,11 +323,16 @@ with col2:  # Everything inside col2 will be centered
     #------------------------------------------------------------------------------------------------------------------
     
     df_1 = pd.read_excel("Data/Zelfdodingen_1970-2023_NL.xlsx",sheet_name= "Tabel 1", skiprows=4,skipfooter=3)
-    # Rename columns (assuming structure from your example)
-    df_1.columns = ["Year", 
-              "Men_Absolute", "Women_Absolute", "Total_Absolute","",
-              "Men_Per100k", "Women_Per100k", "Total_Per100k","",
-              "Men_Standardized", "Women_Standardized", "Total_Standardized"]
+    # Drop unnamed or empty columns
+    df_1 = df_1.loc[:, df_1.columns != ""]
+
+    # Now rename columns (must match df_1.shape[1])
+    df_1.columns = [
+        "Year", 
+        "Men_Absolute", "Women_Absolute", "Total_Absolute",
+        "Men_Per100k", "Women_Per100k", "Total_Per100k",
+        "Men_Standardized", "Women_Standardized", "Total_Standardized"
+    ]
     print(df_1.dtypes)
     
     # Now, convert the 'year' column to numeric (integer) values
