@@ -419,22 +419,22 @@ with col2:  # Everything inside col2 will be centered
         visible=False
     )
     
-    # Adjust layout
-    map_nl.update_geos(fitbounds="locations", visible=False)
-    map_nl.update_layout(
-        template='simple_white',
-        plot_bgcolor='rgba(0, 0, 0, 0)',
-        paper_bgcolor='rgba(0, 0, 0, 0)',
-        margin=dict(l=0, r=0, t=50, b=0), # margins so title shows
-        geo=dict(
-            bgcolor='#D2D2D2'
-        ),
-        coloraxis_colorbar=dict(
-           title=f"{color_title}",  # Change this to your desired label
-           titleside="right",  # Places the title to the right of the color scale
-           titlefont=dict(size=14),  # Adjust font size if needed
-           tickangle=-90  # Rotates the title 90 degrees
-       )
+    fig.update_layout(
+    template='simple_white',
+    plot_bgcolor='rgba(0, 0, 0, 0)',
+    paper_bgcolor='rgba(0, 0, 0, 0)',
+    margin=dict(l=0, r=0, t=50, b=0),
+    height=400,
+    geo=dict(
+        bgcolor='#D2D2D2'
+    ),
+    coloraxis_colorbar=dict(
+        title=dict(
+            text=color_title,
+            side="right",
+            font=dict(size=14)
+            )
+        )
     )
 
     st.plotly_chart(map_nl, use_container_width=True)
