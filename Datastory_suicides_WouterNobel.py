@@ -414,12 +414,12 @@ with col2:  # Everything inside col2 will be centered
     )
     
     # Update layout to adjust the map size
-    fig.update_geos(
+    map_nl.update_geos(
         fitbounds="locations",  # Adjust the map to fit the bounds of the locations
         visible=False
     )
     
-    fig.update_layout(
+    map_nl.update_layout(
     template='simple_white',
     plot_bgcolor='rgba(0, 0, 0, 0)',
     paper_bgcolor='rgba(0, 0, 0, 0)',
